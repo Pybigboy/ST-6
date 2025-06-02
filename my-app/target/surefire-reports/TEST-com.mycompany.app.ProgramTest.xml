@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.mycompany.app.GameTest" time="0.254" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.mycompany.app.ProgramTest" time="2.834" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="http.proxyHost" value="127.0.0.1"/>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
     <property name="java.class.path" value="/Users/bigboy/vs_code_projects/ST-6/my-app/target/test-classes:/Users/bigboy/vs_code_projects/ST-6/my-app/target/classes:/Users/bigboy/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/Users/bigboy/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/bigboy/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/Users/bigboy/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/bigboy/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:"/>
     <property name="https.proxyPort" value="1080"/>
     <property name="java.vm.vendor" value="Homebrew"/>
@@ -14,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/bigboy/vs_code_projects/ST-6/my-app/target/surefire/surefirebooter-20250602100710186_3.jar /Users/bigboy/vs_code_projects/ST-6/my-app/target/surefire 2025-06-02T10-07-10_040-jvmRun1 surefire-20250602100710186_1tmp surefire_0-20250602100710186_2tmp"/>
+    <property name="sun.java.command" value="/Users/bigboy/vs_code_projects/ST-6/my-app/target/surefire/surefirebooter-20250602101150714_3.jar /Users/bigboy/vs_code_projects/ST-6/my-app/target/surefire 2025-06-02T10-11-50_598-jvmRun1 surefire-20250602101150714_1tmp surefire_0-20250602101150714_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/bigboy/vs_code_projects/ST-6/my-app/target/test-classes:/Users/bigboy/vs_code_projects/ST-6/my-app/target/classes:/Users/bigboy/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/Users/bigboy/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/bigboy/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/Users/bigboy/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/bigboy/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/bigboy/vs_code_projects/ST-6/my-app/target/surefire/surefirebooter-20250602100710186_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/bigboy/vs_code_projects/ST-6/my-app/target/surefire/surefirebooter-20250602101150714_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2"/>
     <property name="user.name" value="bigboy"/>
@@ -59,27 +60,7 @@
     <property name="java.class.version" value="67.0"/>
     <property name="http.proxyPort" value="1080"/>
   </properties>
-  <testcase name="testCheckStateGameContinues" classname="com.mycompany.app.GameTest" time="0.011"/>
-  <testcase name="testCheckStateDraw" classname="com.mycompany.app.GameTest" time="0.002"/>
-  <testcase name="testEvaluatePosition" classname="com.mycompany.app.GameTest" time="0.002"/>
-  <testcase name="testCheckStateWinningConditionsForO" classname="com.mycompany.app.GameTest" time="0.003"/>
-  <testcase name="testCheckStateWinningConditionsForX" classname="com.mycompany.app.GameTest" time="0.001"/>
-  <testcase name="testGenerateMoves" classname="com.mycompany.app.GameTest" time="0.002"/>
-  <testcase name="testGameInitialization" classname="com.mycompany.app.GameTest" time="0.002"/>
-  <testcase name="testMaxMove" classname="com.mycompany.app.GameTest" time="0.017"/>
-  <testcase name="testMinMove" classname="com.mycompany.app.GameTest" time="0.004"/>
-  <testcase name="testMiniMax" classname="com.mycompany.app.GameTest" time="0.193">
-    <system-out><![CDATA[
-minimax:   1(0) 
-minimax:   2(0) 
-minimax:   3(0) 
-minimax:   4(0) 
-minimax:   5(0) 
-minimax:   6(0) 
-minimax:   7(0) 
-minimax:   8(0) 
-minimax:   9(0) 
-minimax best:   8(0) Steps counted: 294777]]></system-out>
+  <testcase name="panelClickUpdatesCell" classname="com.mycompany.app.ProgramTest" time="1.476">
     <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting sun/util/resources/cldr/provider/CLDRLocaleDataMetaInfo with JaCoCo 0.8.11.202310140853/f33756c.
 	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:94)
 	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
@@ -117,10 +98,17 @@ minimax best:   8(0) Steps counted: 294777]]></system-out>
 	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3203)
 	at java.base/java.util.Formatter.format(Formatter.java:2801)
 	at java.base/java.io.PrintStream.implFormat(PrintStream.java:1369)
-	at java.base/java.io.PrintStream.format(PrintStream.java:1354)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1348)
 	at java.base/java.io.PrintStream.printf(PrintStream.java:1247)
 	at com.mycompany.app.Game.MiniMax(Program.java:116)
-	at com.mycompany.app.GameTest.testMiniMax(GameTest.java:125)
+	at com.mycompany.app.TicTacToePanel.actionPerformed(Program.java:301)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:374)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:354)
+	at com.mycompany.app.ProgramTest.panelClickUpdatesCell(ProgramTest.java:150)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:766)
@@ -194,7 +182,7 @@ Caused by: java.io.IOException: Error while instrumenting sun/util/resources/cld
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:111)
 	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:92)
-	... 108 more
+	... 115 more
 Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 67
 	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:200)
 	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:180)
@@ -202,7 +190,7 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 	at org.jacoco.agent.rt.internal_4742761.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:77)
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:109)
-	... 109 more
+	... 116 more
 java.lang.instrument.IllegalClassFormatException: Error while instrumenting sun/util/resources/provider/LocaleDataProvider with JaCoCo 0.8.11.202310140853/f33756c.
 	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:94)
 	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
@@ -248,10 +236,17 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting sun/
 	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3203)
 	at java.base/java.util.Formatter.format(Formatter.java:2801)
 	at java.base/java.io.PrintStream.implFormat(PrintStream.java:1369)
-	at java.base/java.io.PrintStream.format(PrintStream.java:1354)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1348)
 	at java.base/java.io.PrintStream.printf(PrintStream.java:1247)
 	at com.mycompany.app.Game.MiniMax(Program.java:116)
-	at com.mycompany.app.GameTest.testMiniMax(GameTest.java:125)
+	at com.mycompany.app.TicTacToePanel.actionPerformed(Program.java:301)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:374)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:354)
+	at com.mycompany.app.ProgramTest.panelClickUpdatesCell(ProgramTest.java:150)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:766)
@@ -325,7 +320,7 @@ Caused by: java.io.IOException: Error while instrumenting sun/util/resources/pro
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:111)
 	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:92)
-	... 116 more
+	... 123 more
 Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 67
 	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:200)
 	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:180)
@@ -333,7 +328,7 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 	at org.jacoco.agent.rt.internal_4742761.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:77)
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:109)
-	... 117 more
+	... 124 more
 java.lang.instrument.IllegalClassFormatException: Error while instrumenting sun/text/resources/cldr/ext/FormatData_ru with JaCoCo 0.8.11.202310140853/f33756c.
 	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:94)
 	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
@@ -377,10 +372,17 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting sun/
 	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3203)
 	at java.base/java.util.Formatter.format(Formatter.java:2801)
 	at java.base/java.io.PrintStream.implFormat(PrintStream.java:1369)
-	at java.base/java.io.PrintStream.format(PrintStream.java:1354)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1348)
 	at java.base/java.io.PrintStream.printf(PrintStream.java:1247)
 	at com.mycompany.app.Game.MiniMax(Program.java:116)
-	at com.mycompany.app.GameTest.testMiniMax(GameTest.java:125)
+	at com.mycompany.app.TicTacToePanel.actionPerformed(Program.java:301)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:374)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:354)
+	at com.mycompany.app.ProgramTest.panelClickUpdatesCell(ProgramTest.java:150)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:766)
@@ -454,7 +456,7 @@ Caused by: java.io.IOException: Error while instrumenting sun/text/resources/cld
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:111)
 	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:92)
-	... 114 more
+	... 121 more
 Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 67
 	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:200)
 	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:180)
@@ -462,7 +464,20 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 	at org.jacoco.agent.rt.internal_4742761.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:77)
 	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:109)
-	... 115 more
+	... 122 more
 ]]></system-err>
   </testcase>
+  <testcase name="checkActivePlayState" classname="com.mycompany.app.ProgramTest" time="0.018"/>
+  <testcase name="integrationTestPanelWithFrame" classname="com.mycompany.app.ProgramTest" time="0.775"/>
+  <testcase name="testMinimaxFunctionality" classname="com.mycompany.app.ProgramTest" time="0.106"/>
+  <testcase name="checkDrawCondition" classname="com.mycompany.app.ProgramTest" time="0.014"/>
+  <testcase name="verifyGameStartState" classname="com.mycompany.app.ProgramTest" time="0.006"/>
+  <testcase name="validateWinningConditionsForO" classname="com.mycompany.app.ProgramTest" time="0.004"/>
+  <testcase name="validateWinningConditionsForX" classname="com.mycompany.app.ProgramTest" time="0.003"/>
+  <testcase name="gameStateUpdatesOnMove" classname="com.mycompany.app.ProgramTest" time="0.314"/>
+  <testcase name="verifyMoveGeneration" classname="com.mycompany.app.ProgramTest" time="0.013"/>
+  <testcase name="panelCellsAreInitialized" classname="com.mycompany.app.ProgramTest" time="0.01"/>
+  <testcase name="evaluateBoardStates" classname="com.mycompany.app.ProgramTest" time="0.005"/>
+  <testcase name="validateTicTacToeCellBehavior" classname="com.mycompany.app.ProgramTest" time="0.008"/>
+  <testcase name="minAndMaxValueTests" classname="com.mycompany.app.ProgramTest" time="0.008"/>
 </testsuite>
